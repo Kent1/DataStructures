@@ -1,6 +1,7 @@
 package kent.datastructures.tree;
 
 /**
+ * @param <T>
  * @author Quentin Loos
  */
 public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T> {
@@ -22,7 +23,7 @@ public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 
   /**
    * Construct an AVLTree with data.
-   * 
+   *
    * @param data
    *          The data of the node
    */
@@ -33,7 +34,7 @@ public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 
   /**
    * Construct an AVLTree with data and subtrees.
-   * 
+   *
    * @param data
    *          The data of the node
    * @param left
@@ -52,7 +53,7 @@ public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see kent.datastructures.BinarySearchTree#getLeft()
    */
   @Override
@@ -62,7 +63,7 @@ public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see kent.datastructures.BinarySearchTree#getRight()
    */
   @Override
@@ -72,7 +73,7 @@ public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see kent.datastructures.BinaryTree#getHeight()
    */
   @Override
@@ -107,7 +108,7 @@ public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 
   /**
    * Computes the balance of the tree.
-   * 
+   *
    * @return the balance of the tree
    */
   private int balance() {
@@ -154,7 +155,7 @@ public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see kent.datastructures.BinarySearchTree#balancing()
    */
   @Override

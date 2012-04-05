@@ -2,7 +2,8 @@ package kent.datastructures.tree;
 
 /**
  * This class represents a binary search tree.
- * 
+ *
+ * @param <T>
  * @author Quentin Loos
  */
 public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
@@ -20,7 +21,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Constructs a BinarySerachTree with data
-   * 
+   *
    * @param data
    *          the data of the node
    */
@@ -30,7 +31,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Constructs a BinarySerachTree with data and the subtrees
-   * 
+   *
    * @param data
    *          The data of the node
    * @param left
@@ -49,7 +50,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see kent.datastructures.BinaryTree#getLeft()
    */
   @Override
@@ -59,7 +60,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see kent.datastructures.BinaryTree#getRight()
    */
   @Override
@@ -73,7 +74,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Search the given data in the tree
-   * 
+   *
    * @param data
    *          The data to search
    * @return True if the given data is in the tree
@@ -96,7 +97,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Add data to the tree.
-   * 
+   *
    * @param data
    *          the data to add
    */
@@ -119,9 +120,10 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Insert a node in a empty tree
-   * 
+   *
    * @param data
    *          the data to add
+   * @return a new BinarySearchTree with data
    */
   public BinarySearchTree<T> insertEmpty(T data) {
     return new BinarySearchTree<T>(data);
@@ -129,7 +131,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Remove the specified data of the tree.
-   * 
+   *
    * @param data
    *          The data to remove
    */
@@ -170,6 +172,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Remove the minimum data in the tree, and return it.
+   * @return the minimum data
    */
   public T removeMin() {
     if (this.isEmpty())
@@ -192,6 +195,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Remove the maximum data in the tree, and return it.
+   * @return the maximum data in the tree
    */
   public T removeMax() {
     if (this.isEmpty())
@@ -224,7 +228,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Search the minimum data in the tree.
-   * 
+   *
    * @return The minimum data in the tree
    */
   public T searchMin() {
@@ -236,7 +240,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Search the maximum data in the tree.
-   * 
+   *
    * @return The maximum data in the tree
    */
   public T searchMax() {
@@ -248,7 +252,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Search the successor of a node and return it
-   * 
+   *
    * @param data
    *          the node
    * @return The successor of the node
@@ -276,7 +280,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
 
   /**
    * Search the predecessor of a node and return it
-   * 
+   *
    * @param data
    *          the node
    * @return The predecessor of the node

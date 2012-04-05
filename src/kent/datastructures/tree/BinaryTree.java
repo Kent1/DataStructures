@@ -2,7 +2,8 @@ package kent.datastructures.tree;
 
 /**
  * This class represents a binary tree.
- * 
+ *
+ * @param <T>
  * @author Quentin Loos
  */
 public class BinaryTree<T> {
@@ -30,7 +31,7 @@ public class BinaryTree<T> {
 
   /**
    * Constructs a Binarytree that contains the specified data
-   * 
+   *
    * @param data
    *          The data of the node
    */
@@ -41,7 +42,7 @@ public class BinaryTree<T> {
 
   /**
    * Constructs a Binarytree containing the specified data and the subtrees
-   * 
+   *
    * @param data
    *          the data of the node
    * @param left
@@ -110,7 +111,7 @@ public class BinaryTree<T> {
 
   /**
    * Return true is the tree is empty
-   * 
+   *
    * @return true if the tree is empty
    */
   public boolean isEmpty() {
@@ -119,7 +120,7 @@ public class BinaryTree<T> {
 
   /**
    * Return true if the node is a leaf.
-   * 
+   *
    * @return true if the node is a leaf.
    */
   public boolean isLeaf() {
@@ -128,7 +129,7 @@ public class BinaryTree<T> {
 
   /**
    * Compute the height of the tree
-   * 
+   *
    * @return the height of the tree
    */
   public int getHeight() {
@@ -145,7 +146,7 @@ public class BinaryTree<T> {
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see java.lang.Object#toString()
    */
   @Override
