@@ -84,9 +84,8 @@ public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T> {
   /*
    * Class Methods
    */
-
   @Override
-  public AVLTree<T> insertEmpty(T data) {
+  protected AVLTree<T> insertEmpty(T data) {
     return new AVLTree<T>(data);
   }
 

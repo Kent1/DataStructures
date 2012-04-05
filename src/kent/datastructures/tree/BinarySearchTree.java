@@ -125,7 +125,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree<T> {
    *          the data to add
    * @return a new BinarySearchTree with data
    */
-  public BinarySearchTree<T> insertEmpty(T data) {
+  protected BinarySearchTree<T> insertEmpty(T data) {
     return new BinarySearchTree<T>(data);
   }
 
